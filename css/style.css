@@ -80,6 +80,11 @@ a{
     list-style: none;
     text-transform: uppercase;
 }
+
+#navbar-items a:hover{
+    color: #ffc34d;
+}
+
 #navbar-items li{
     padding: 10px;
 }
