@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="./css/mobile.css" >
+    <link rel="icon" type="imagem/png" href="./images/sahaj (1).png" />
     
     <script ></script>
     <title>SAHAJ</title>
@@ -14,11 +15,12 @@
     <nav id="navbar">
         <div id="navbar-container">
             <!-- <h1 class="logo">IT Solutions</h1> -->
-            <img src="./images/picwish.png" alt="" class="logo_sahaj" >
+            <img src="./images/sahaj (1).png" alt="" id="logo" class="logo_sahaj" >
            <ul id="navbar-items">
                 <li><a href="#showcase" >Início</a></li>
                 <li><a href="#clients" >Parceiros</a></li>
                 <li><a href="#gallery" >Galeria</a></li>
+                <li><a href="#footer" >Contato</a></li>
            </ul>
         </div>
     </nav>
@@ -27,7 +29,7 @@
         <div id="showcase-container">
             <h2>Nunca foi só tocar uma música.</h2>
             <p>Não deixe de levar a alegria para o seu evento e garanta bons momentos</p>
-            <a href="" class="btn">Saiba Mais</a>
+            <a href="https://www.rodrigosioli.com.br" target="_blank" class="btn">Saiba Mais</a>
         </div>
     </header>
 
@@ -35,10 +37,10 @@
     <section id="clients">
         <div class="headline">Nossos parceiros</div>
         <div id="client-container">
-            <img src="./images/vitão rock bar.jpg" class="client" alt="">
-            <img src="./images/lata velha.jfif" class="client" alt="">
+            <img src="./images/sahaj (2).png" class="client" alt="">
+            <img src="./images/sahaj (3).png" class="client" alt="">
             <img src="./images/general pub.png" class="client" alt="">
-            <img src="./images/tribos.jpg" class="client" alt="">
+            <img src="./images/sahaj (4).png" class="client" alt="">
         </div>
     </section>
 
@@ -122,5 +124,19 @@
     
     <!-- Our JS file-->
     <script src="./js/main.js"></script>
+    <script>
+        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+        window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("navbar").style.padding = "30px 10px";
+        document.getElementById("logo").style.height = "80px";
+    } else {
+        document.getElementById("navbar").style.padding = "80px 10px";
+        document.getElementById("logo").style.height = "130px";
+    }
+    }
+    </script>
     </body>
 </html>

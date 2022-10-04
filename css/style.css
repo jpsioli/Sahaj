@@ -45,8 +45,11 @@ a{
     width: 100%;
     background: #111;
     color: #eee;
-    height: 80px;
+    height: 90px;
     position: fixed;
+    transition: 0.4s;
+    top: 0; /* At the top */
+  z-index: 99;
 }
 
 #navbar-container{
@@ -58,8 +61,13 @@ a{
     align-items: center;
 }
 
+/* Style the logo */
+#navbar #logo {
+    transition: 0.4s;
+  }
+
 .logo_sahaj{
-    height: 60px;
+    height: 90px;
 
 }
 
@@ -83,7 +91,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: #eee;
     background: url('./images/showcase.jpg') no-repeat center center/cover;
 
     /*Overlay*/
@@ -111,7 +119,7 @@ a{
 /* Clientes */
 #clients{
     width: 100%;
-    background: #fff;
+    background: #eee;
     color: #111;
     padding: 50px;
 }
