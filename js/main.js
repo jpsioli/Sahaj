@@ -29,11 +29,11 @@ $("#navbar a, .btn").on("click", function (event) {
 
        function scrollFunction() {
        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-           document.getElementById("navbar").style.padding = "30px 15%";
+           document.getElementById("navbar").style.padding = "30px 10%";
            document.getElementById("logo").style.height = "80px";
            document.getElementById("navbar-items").style.top = "4.7875rem";
        } else {
-           document.getElementById("navbar").style.padding = "70px 15%";
+           document.getElementById("navbar").style.padding = "70px 10%";
            document.getElementById("logo").style.height = "130px";
            document.getElementById("navbar-items").style.top = "8.5875rem";
        }
