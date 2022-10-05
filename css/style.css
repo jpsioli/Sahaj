@@ -175,6 +175,11 @@ a{
     background-color: #99690a;
 }
 
+figcaption{
+    font-size: 12px;
+    text-align: center;
+}
+
 /*product*/
 #product{
     width: 100%;
