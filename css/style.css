@@ -144,6 +144,9 @@ a{
     background: #222;
     color: #eee;
     padding: 50px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
 }
 
 #features-container{
@@ -165,6 +168,11 @@ a{
 .feature-title{
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.feature:hover{
+    color: #222;
+    background-color: #99690a;
 }
 
 /*product*/
