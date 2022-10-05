@@ -87,3 +87,7 @@ $("#navbar a, .btn").on("click", function (event) {
        
        btnMenu.addEventListener("click", handleButtonClick);
        btnMenu.addEventListener("touchstart", handleButtonClick);
+
+       $('input.colorir').bind('focus blur',function(){
+        $(this).toggleClass('input_colorido');
+      });
