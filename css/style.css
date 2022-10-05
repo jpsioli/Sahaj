@@ -49,16 +49,23 @@ a{
     position: fixed;
     transition: 0.4s;
     top: 0; /* At the top */
-  z-index: 99;
+    z-index: 99;
+    /* padding-left: 20%; */
+    /* width: 80%; */
+    /* height: 100%; */
+    margin: auto; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
 }
 
 #navbar-container{
-    width: 80%;
+    /* width: 80%;
     height: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
 }
 
 /* Style the logo */
@@ -89,6 +96,9 @@ a{
     padding: 10px;
 }
 
+.btn-menu{
+    display: none;
+}
 /* Showcase */
 
 #showcase{
@@ -253,5 +263,26 @@ a{
     color: #fff;
     padding: 30px;
     text-align: center;
-
+    /* height: 80px;
+    display: flex;
+    margin:auto;  */
 }
+/* .footer_left{
+    width: 50%;
+}
+.footer_right{
+    width: 50%;
+}
+
+.logo_footer_left{
+    height: 80px;
+}
+
+.footer_bottom{
+    display: grid;
+    width: 100%;
+}
+.footer_container{
+    width: 101%;
+}
+ */
