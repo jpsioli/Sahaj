@@ -92,25 +92,12 @@
         <div class="headline">Nosso produto</div>
         <div id="product-container">
             <video src="./images/video.mp4" poster="./images/background3.jpg" width="80%" height="40%" preload="none" controls ></video>
-            <!-- <img src="./images/iphone-x.png" alt="" class="iphonex">
-            <div id="items">
-                <div class="item">
-                    <i class="fas fa-map-marked fa-2x color-primary"></i>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo tempore repellendus recusandae laborum, tempora quasi!</p>
-                    <i class="fas fa-users fa-2x color-primary"></i>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo tempore repellendus recusandae laborum, tempora quasi!</p>
-                    <i class="fas fa-glass-cheers fa-2x color-primary"></i>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo tempore repellendus recusandae laborum, tempora quasi!</p>
-                    <i class="fas fa-book-open fa-2x color-primary"></i>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo tempore repellendus recusandae laborum, tempora quasi!</p>
-                </div>
-            </div> -->
         </div>
     </section>
 
     <section class="cta">
         <h2>Vamos planejar o seu evento?</h2>
-        <h4>Fale agora mesmo conosco e torne seu evento inesquecível!</h4>
+        <h4>Entre em contato agora e torne seu evento inesquecível!</h4>
          <a href="#contatos">Entrar em Contato</a>
     </section><!--cta-->
 
@@ -134,17 +121,24 @@
         <div id="testmonials-container">
             <div class="testimonial">
                 <figure>
-                    <img src="./images/person-1.jpeg" alt="" class="testimonial-image">
-                    <figcaption>Luiz Carlos Bertolucci, Gerente RH</figcaption>
+                    <img src="./images/patty_casamento.jpeg" alt="" class="testimonial-image">
+                    <figcaption>Patty, Noiva do casamento</figcaption>
                 </figure>
-                <p>"<i>Contratar a Sahaj foi um grande acerto para o sucesso do meu evento corporativo, todos da empresa se divertiram como nunca, em breve eles voltarão, certeza!</i> "</p>
+                <p>"<i>Obrigadaaaaa Rodrigo!!! Foi incrível!, Só elogios! Muito obrigada pelo maravilhoso trabalho, já estamos com saudade da festa hahah</i> "</p>
             </div>
             <div class="testimonial">
                 <figure>
-                    <img src="./images/person-2.jpeg" alt="" class="testimonial-image">
-                    <figcaption>Amaro Martins de Souza</figcaption>
+                    <img src="./images/tamyresMalfatti.jpeg" alt="" class="testimonial-image">
+                    <figcaption>Thamyres Malfatti, Noiva do casamento</figcaption>
                 </figure>
-                <p><i>"Conheci a banda num bar de rock e minha esposa e eu tivemos a certeza que eles fariam sucesso na festa do nosso casamento! foi uma apresentação impecável. </i>"</p>
+                <p><i>"Nós queremos agradecer do fundo do coração pelo seu trabalho no nosso casamento. Foi sensacional do início ao fim, amamos tudo!!! Não teve uma pessoa que não elogiou e ainda tiveram pessoas pedindo seu contato. rs óbvio que passei e indico de olhos fechados. Obrigada pelo seu trabalho. Foi maravilhoso S2</i>"</p>
+            </div>
+            <div class="testimonial">
+                <figure>
+                    <img src="./images/Bruno_casamento.jpeg" alt="" class="testimonial-image">
+                    <figcaption>Bruno, Noivo do casamento</figcaption>
+                </figure>
+                <p><i>"Fala Rodrigão! Cara, muito obrigado por tudo! como eu disse, vocês realizaram um sonho meu de tocar em uma banda! e pela generosidade do seu presente! foi do Car#%!@$ Muito sucesso para vocês!</i>"</p>
             </div>
         </div>
     </div>
@@ -152,11 +146,15 @@
     <div id="contatos">
     <section class="contato">
         <div class="headline">Entre em contato</div>
+        <div class="headlineDetail">
+            <p>Preencha o formulário e entraremos em contato o mais breve possível.</p>
+        </div>
         <div style="max-width: 700px;" class="center">
             
             <form method="post">
-                <input type="text" placeholder="Seu nome..." />
-                <input type="email" placeholder="seu e-mail..." />
+                <input type="text" id="nome" placeholder="Seu nome..." required  />
+                <input type="email" id="email" placeholder="Seu e-mail..." required />
+                <input type="text" id="telefone" placeholder="Seu telefone..." />
                 <textarea placeholder="Sua mensagem..."></textarea>
                 <input type="submit" name="acao" value="Enviar" />
                 
