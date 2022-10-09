@@ -87,6 +87,7 @@
 
 .client{
     width: 50%;
+    padding: 15px 0;
 }
 
 /* feature */
@@ -133,4 +134,14 @@
 
 #gallery-container{
     grid-template-columns: 1fr;
+}
+
+footer{
+    flex-direction: column;
+    padding-left: 0px;
+}
+
+footer .boxs{
+    text-align: center;
+    width: 100%;
 }
