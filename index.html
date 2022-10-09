@@ -26,6 +26,7 @@
             <li><a href="#showcase" >Início</a></li>
             <li><a href="#clients" >Parceiros</a></li>
             <li><a href="#gallery" >Galeria</a></li>
+            <li><a href="#depoimentos" >Depoimentos</a></li>
             <li><a href="#contatos" >Contato</a></li>
         </ul>
     </nav>
@@ -116,32 +117,48 @@
         </div>
     </section>
 
-    <div class="testimonials">
-        <div class="headline">Depoimentos</div>
-        <div id="testmonials-container">
-            <div class="testimonial">
-                <figure>
-                    <img src="./images/patty_casamento.jpeg" alt="" class="testimonial-image">
-                    <figcaption>Patty, Noiva do casamento</figcaption>
-                </figure>
-                <p>"<i>Obrigadaaaaa Rodrigo!!! Foi incrível!, Só elogios! Muito obrigada pelo maravilhoso trabalho, já estamos com saudade da festa hahah</i> "</p>
-            </div>
-            <div class="testimonial">
-                <figure>
-                    <img src="./images/tamyresMalfatti.jpeg" alt="" class="testimonial-image">
-                    <figcaption>Thamyres Malfatti, Noiva do casamento</figcaption>
-                </figure>
-                <p><i>"Nós queremos agradecer do fundo do coração pelo seu trabalho no nosso casamento. Foi sensacional do início ao fim, amamos tudo!!! Não teve uma pessoa que não elogiou e ainda tiveram pessoas pedindo seu contato. rs óbvio que passei e indico de olhos fechados. Obrigada pelo seu trabalho. Foi maravilhoso S2</i>"</p>
-            </div>
-            <div class="testimonial">
-                <figure>
-                    <img src="./images/Bruno_casamento.jpeg" alt="" class="testimonial-image">
-                    <figcaption>Bruno, Noivo do casamento</figcaption>
-                </figure>
-                <p><i>"Fala Rodrigão! Cara, muito obrigado por tudo! como eu disse, vocês realizaram um sonho meu de tocar em uma banda! e pela generosidade do seu presente! foi do Car#%!@$ Muito sucesso para vocês!</i>"</p>
-            </div>
-        </div>
-    </div>
+    <section id="depoimentos" class="depoimentos">
+        <h1>Depoimentos</h1>
+        <div style="display: block;"  class="center">
+            <br />
+            <div style="max-width: 1200px;" class="container-slider">
+                <div class="container-slider-single">
+                    <img src="./images/patty_casamento.jpeg" alt="" class="testimonial-image" />
+                    <h3>Patty, Noiva do casamento</h3>
+                    <p>"<i>Obrigadaaaaa Rodrigo!!! Foi incrível!, Só elogios! Muito obrigada pelo maravilhoso trabalho, já estamos com saudade da festa hahah</i> "</p>
+                    <img src="images/RATE.svg" />
+                </div><!--container-slider-single-->
+                <div class="container-slider-single">
+                    <img src="./images/tamyresMalfatti.jpeg" alt="" class="testimonial-image" />
+                    <h3>Thamyres Malfatti, Noiva do casamento</h3>
+                    <p><i>"Nós queremos agradecer do fundo do coração pelo seu trabalho no nosso casamento. Foi sensacional do início ao fim, amamos tudo!!! Não teve uma pessoa que não elogiou e ainda tiveram pessoas pedindo seu contato. rs óbvio que passei e indico de olhos fechados. Obrigada pelo seu trabalho. Foi maravilhoso S2</i>"</p>
+                    <img src="images/RATE.svg" />
+                </div><!--container-slider-single-->
+                <div class="container-slider-single">
+                    <img src="./images/Bruno_casamento.jpeg" alt="" class="testimonial-image" />
+                    <h3>Bruno, Noivo do casamento</h3>
+                    <p><i>"Fala Rodrigão! Cara, muito obrigado por tudo! como eu disse, vocês realizaram um sonho meu de tocar em uma banda! e pela generosidade do seu presente! foi do Car#%!@$ Muito sucesso para vocês!</i>"</p>
+                    <img src="images/RATE.svg" />
+                </div><!--container-slider-single-->
+                <div class="container-slider-single">
+                    <img src="./images/Marcela_casamento.jpeg" alt="" class="testimonial-image" />
+                    <h3>Marcela Pappiani, Noiva do casamento</h3>
+                    <p><i>"As músicas da cerimônia ficaram ótimas, o show foi bem legal também, mesmo estilo que tinhamos combinado. O cantor era bom e animou o pessoal, deu tudo certo! A gente é super criterioso com banda. Mas deu tudo certo, ficou como imaginamos!!</i>"</p>
+                    <img src="images/RATE.svg" />
+                </div><!--container-slider-single-->
+                <div class="container-slider-single">
+                    <img src="./images/casal.jpg" alt="" class="testimonial-image" />
+                    <h3>Noivos do casamento</h3>
+                    <p><i>"Oi Rô! A gente tem que agradecer, porque foi muito demais, vocês arrebentaram, todo mundo está falando de vocês, já passei o contato de vocês para um monte de gente, Foi incrível, foi muito divertido, e falo novamente obrigado por tudo! tocaram só as melhores músicas, foi incrível, foi sensancional! </i>"</p>
+                    <img src="images/RATE.svg" />
+                </div><!--container-slider-single-->
+           
+            </div><!--container-slider-->
+            
+        </div><!--center-->
+    </section><!--depoimentos-->
+
+
 
     <div id="contatos">
     <section class="contato">
@@ -180,5 +197,27 @@
     <!-- Our JS file-->
     <script src="./js/main.js"></script>
     <script src="./js/app.js" defer></script>
+    <script src="./js/jquery.js" ></script>
+    <script src="./js/slick.min.js"></script>
+    <script>
+          $('.container-slider').slick({
+            dots: true,
+            arrows:false,
+            speed:7000,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            pauseOnHover:false,
+            responsive: [
+                        {
+                          breakpoint: 768,
+                          settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                          }
+                        }],
+            });
+    </script>
     </body>
 </html>

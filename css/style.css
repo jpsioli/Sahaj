@@ -207,7 +207,7 @@ figcaption{
 
 /* Testimonials */
 
-.testimonial{
+ /* .testimonial{
     display: flex;
     align-items: center;
     font-size: 1.7rem;
@@ -237,7 +237,95 @@ figcaption{
     width: auto;
     border-radius: 50%;
     margin: 15px;
+} */
+
+section.depoimentos{
+    background-color: #333;
+    padding: 40px 0;
 }
+
+section.depoimentos > h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+} 
+
+.container-slider{
+    overflow: hidden;
+    padding: 40px 0;
+    color: #fff;
+    background-color: #333;
+}
+
+.container-slider-single{
+    float:left;
+    text-align: center;
+    padding:15px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #333;
+}
+
+.container-slider-single h3{
+    font-size: 14px;
+}
+
+.container-slider-single .testimonial-image{
+    height: 200px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.container-slider-single p{
+    margin: 15px 0;
+    color: #a1a4a8;
+    font-size: 14px;
+}
+
+.slick-slide{
+    margin-left: 27px;
+}
+/* the parent */
+.slick-list{
+    margin-left: -27px;
+}
+
+/****SLICK SLIDER****/
+
+.slick-dotted ul{
+    display: block;
+	list-style-type: none;
+	text-align: center;
+	position: relative;
+	top:30px;
+}
+
+.slick-dotted li{
+	display: inline-block;
+	margin: 0 7px;
+}
+
+.slick-dotted button:focus{
+	outline: 0;
+}
+
+.slick-dotted li button{
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	color: #fff;
+	border-width: 0;
+	background: #fff;
+	opacity: 1;
+	cursor: pointer;
+}
+
+li.slick-active button{
+	background: #000;
+	color: #000;
+}
+
+.slick-slide:focus { outline: none; }
 
 /* Gallery */
 
