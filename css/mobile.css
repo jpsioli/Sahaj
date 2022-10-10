@@ -104,6 +104,14 @@
     flex-direction: column;
 }
 
+#product-containerYT{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    text-align: center;
+}
+
 #items{
     width: 90%;
 }

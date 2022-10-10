@@ -158,6 +158,13 @@ figcaption{
     align-items: center;
 }
 
+#product-containerYT{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
 #items{
     width: 650px;
 }
@@ -407,13 +414,6 @@ textarea{
   }
 
 /* Footer */
-/* #footer{
-    background: #222;
-    color: #fff;
-    padding: 30px;
-    text-align: center;
-} */
-
 footer{
     width: 100%;
     min-height: 150px;
@@ -439,4 +439,12 @@ footer .boxs{
     margin: 10px 0px;
     list-style: none;
     color: #fff;
+}
+
+.cnpj{
+    width: 100%;
+    color: #fff;
+    background-color: #444;
+    text-align: center;
+    padding-bottom: 15px;
 }
