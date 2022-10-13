@@ -1,5 +1,6 @@
 #navbar {
-    height: 80px;
+    height: 90px;
+    padding: 30px 50px;
 }
 
 #navbar.active #navbar-items{
@@ -77,7 +78,11 @@
 
 /* Showcase */
 #showcase-container{
-    padding: 40px
+    /* padding: 40px */
+}
+
+#showcase-logo{
+    height: 422px;
 }
 
 /* Clients */

@@ -125,10 +125,10 @@ a{
     text-decoration: none;
 }
 
-#showcase-logo {
-    
-    
+#showcase-logo{
+    height: 100%;
 }
+
 
 /* Clientes */
 #clients{

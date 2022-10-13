@@ -20,9 +20,9 @@ $("#navbar a, .btn").on("click", function (event) {
 
        function scrollFunction() {
        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-           document.getElementById("navbar").style.padding = "30px 10%";
-           document.getElementById("logo").style.height = "80px";
-           document.getElementById("navbar-items").style.top = "4.7875rem";
+        //    document.getElementById("navbar").style.padding = "30px 10%";
+        //    document.getElementById("logo").style.height = "80px";
+        //    document.getElementById("navbar-items").style.top = "4.7875rem";
 
            document.getElementById("logo").style.visibility = "visible";
            document.getElementById("navbar").style.opacity = "1";
