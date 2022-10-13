@@ -153,3 +153,11 @@ footer .boxs{
     text-align: center;
     width: 100%;
 }
+
+
+.container-slider arrows{
+    overflow: hidden;
+    padding: 40px 0;
+    color: #333;
+    background-color: #333;
+}

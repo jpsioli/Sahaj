@@ -54,7 +54,8 @@ a{
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    padding: 70px 10%;
+    padding: 30px 10%;
+    opacity: 0;
 }
 
 /* Style the logo */
@@ -69,14 +70,15 @@ a{
 
 .logo{
     font-size: 2rem;
-    height: 130px;
+    height: 80px;
+    visibility: hidden;
 }
 
 #navbar-items{
     display: flex;
     list-style: none;
     text-transform: uppercase;
-    top: 8.5875rem;
+    top: 4.7875rem;
 }
 
 #navbar-items a:hover{
@@ -106,7 +108,8 @@ a{
 }
 
 #showcase-container{
-    text-align: center;
+    margin-top: 1%;
+    text-align: center; 
 }
 
 #showcase-container h2{
@@ -115,11 +118,16 @@ a{
 
 #showcase-container p{
     font-size: 1.2rem;
-    padding: 10px 0;
+    padding: 2% 0;
 }
 
 #showcase-container a{
     text-decoration: none;
+}
+
+#showcase-logo {
+    
+    
 }
 
 /* Clientes */

@@ -33,10 +33,16 @@
 
     <header id="showcase" style="background: url(./images/violao.jpg) no-repeat center center/cover; background-color: rgba(0,0,0,0.6);">
         <div id="showcase-container">
+            <div id="showcase-logo">
+                <img src="./images/sahaj (1).png" />
+            </div>
             <h2>Torne seu evento inesquecível!.</h2>
             <p>Não deixe de levar a alegria para o seu evento e garanta bons momentos</p>
             <a href="https://www.rodrigosioli.com.br" target="_blank" class="btn">Saiba Mais</a>
+
+
         </div>
+        
     </header>
 
     <!--About-->
@@ -136,14 +142,17 @@
         </div>
         <div style="max-width: 700px;" class="center">
             
-            <form method="post">
-                <input type="text" id="nome" placeholder="Seu nome..." required  />
+            <form action="https://formsubmit.co/jpsioli2010@gmail.com" method="POST">
+                <input type="text" id="name" placeholder="Seu nome..." required  />
                 <input type="email" id="email" placeholder="Seu e-mail..." required />
-                <input type="text" id="telefone" placeholder="Seu telefone..." />
-                <textarea placeholder="Sua mensagem..."></textarea>
+                <textarea id="message" placeholder="Sua mensagem..."></textarea>
                 <input type="submit" name="acao" value="Enviar" />
-                
-            </form>
+            </form> 
+            <!-- <form action="https://formsubmit.co/jpsioli2010@gmail.com" method="POST">
+                <input type="text" name="name" required>
+                <input type="email" name="email" required>
+                <button type="submit">Send</button>
+           </form> -->
         </div><!--center-->
     </section><!--contato-->
 </div>
@@ -195,18 +204,19 @@
           $('.container-slider').slick({
             dots: true,
             arrows:false,
-            speed:7000,
+            speed:2000,
             slidesToShow: 3,
             slidesToScroll: 1,
             autoplay: true,
-            autoplaySpeed: 3000,
+            autoplaySpeed: 5000,
             pauseOnHover:false,
             responsive: [
                         {
                           breakpoint: 768,
                           settings: {
                             slidesToShow: 1,
-                            slidesToScroll: 1
+                            slidesToScroll: 1,
+                            focusOnSelect: true
                           }
                         }],
             });

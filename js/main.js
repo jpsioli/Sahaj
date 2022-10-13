@@ -15,15 +15,6 @@ $("#navbar a, .btn").on("click", function (event) {
     }
 });
 
-// Sticky menu background
-//  window.addEventListener("scroll", function () {
-//      if (window.scrollY > 150) {
-//          document.querySelector("#navbar").style.opacity = 0.99;
-//      } else {
-//          document.querySelector("#navbar").style.opacity = 1;
-//      }
-//  });
-
 
        window.onscroll = function() {scrollFunction()};
 
@@ -32,10 +23,15 @@ $("#navbar a, .btn").on("click", function (event) {
            document.getElementById("navbar").style.padding = "30px 10%";
            document.getElementById("logo").style.height = "80px";
            document.getElementById("navbar-items").style.top = "4.7875rem";
+
+           document.getElementById("logo").style.visibility = "visible";
+           document.getElementById("navbar").style.opacity = "1";
+           document.getElementById("showcase-logo").style.visibility = "hidden";
+           
        } else {
-           document.getElementById("navbar").style.padding = "70px 10%";
-           document.getElementById("logo").style.height = "130px";
-           document.getElementById("navbar-items").style.top = "8.5875rem";
+            document.getElementById("logo").style.visibility = "hidden";
+            document.getElementById("navbar").style.opacity = "0";
+            document.getElementById("showcase-logo").style.visibility = "visible";
        }
        }
 
